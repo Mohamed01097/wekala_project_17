@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="action_create_receipt_today_records" model="ir.actions.server">
+            <field name="name">Create Receipt</field>
+            <field name="model_id" ref="model_daily_journal_agency"/>
+            <field name="binding_model_id" ref="model_daily_journal_agency"/>
+            <field name="binding_view_types">tree</field>
+            <field name="state">code</field>
+            <field name="code">records.action_create_receipt_today_records()</field>
+        </record>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_daily_journal_agency,daily.journal.agency,model_daily_journal_agency,,1,1,1,1
+
+access_customer_codes,customer.codes,model_customer_codes,,1,1,1,1
+access_farmer_codes,farmer.codes,model_farmer_codes,,1,1,1,1
+access_product_code,product.code,model_product_code,,1,1,1,1
+access_box_type_product,box.type.product,model_box_type_product,,1,1,1,1

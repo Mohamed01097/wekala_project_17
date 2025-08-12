@@ -1,0 +1,135 @@
+<odoo>
+    <data>
+
+
+        <record id="product_code_view_tree" model="ir.ui.view">
+            <field name="name">product.code</field>
+            <field name="model">product.code</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+
+                    <field name="code"/>
+                    <field name="product_id"/>
+
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="farmer_code_view_tree" model="ir.ui.view">
+            <field name="name">farmer.code</field>
+            <field name="model">farmer.codes</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+
+                    <field name="code"/>
+                    <field name="partner_id"/>
+
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="customer_code_view_tree" model="ir.ui.view">
+            <field name="name">customer.code</field>
+            <field name="model">customer.codes</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+
+                    <field name="code"/>
+                    <field name="partner_id"/>
+
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="daily_journal_agency_view_search" model="ir.ui.view">
+            <field name="name">daily.journal.agency</field>
+            <field name="model">daily.journal.agency</field>
+            <field name="arch" type="xml">
+                <search>
+                    <group expand="0" string="Group By...">
+                        <filter name="date" context="{'group_by': 'date'}"/>
+                    </group>
+
+                </search>
+            </field>
+        </record>
+
+        <record id="daily_journal_agency_form" model="ir.ui.view">
+            <field name="name">daily.journal.agency</field>
+            <field name="model">daily.journal.agency</field>
+            <field name="priority" eval="1"/>
+            <field name="arch" type="xml">
+                <form string="Daily Transaction">
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+
+            </field>
+        </record>
+
+        <record id="daily_journal_agency_view_tree" model="ir.ui.view">
+            <field name="name">daily.journal.agency</field>
+            <field name="model">daily.journal.agency</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+
+                    <field name="customer_code"
+                           options='{"fg_color": "blue:customer_code != False"}'/>
+
+                    <field name="farmer_code"
+                           options='{"fg_color": "red:farmer_code != False"}'/>
+
+                    <field name="product_code"
+                           options='{"fg_color": "black:product_code != False"}'/>
+                    <field name="box_type"/>
+                    <field name="quantity"/>
+                    <field name="box_type_qty"/>
+                    <field name="price_unit"/>
+                    <field name="commission_value"/>
+                    <field name="product_id" options='{"fg_color": "#81219C:product_id != False"}'/>
+                    <field name="farmer" options='{"fg_color": "red:farmer != False"}'/>
+                    <field name="customer_id" options='{"fg_color": "blue:customer_id != False"}'/>
+                    <field name="date"/>
+                    <field name="index"/>
+                    <field name="is_sale_created" column_invisible="1"/>
+                    <field name="is_purchase_created" column_invisible="1"/>
+                    <!--                    <button name="action_copy_line" type="object" string="Copy Line" class="oe_highlight"/>-->
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="res_partner_view_form" model="ir.ui.view">
+            <field name="name">res.partner.view.form.inherit.journal.agency</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Box Type Products">
+                        <field name="box_type_ids">
+                            <tree editable="bottom">
+                                <field name="partner_id" column_invisible="1"/>
+                                <field name="product_id"/>
+                                <field name="quantity"/>
+                                <button name="open_product_history" string="History" type="object" class="btn-link" icon="fa-history"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+                <!--                <xpath expr="//group[1]" position="inside">-->
+                <!--                    <group>-->
+                <!--                        <field name="credit"/>-->
+                <!--                        <field name="debit"/>-->
+                <!--                    </group>-->
+                <!--                </xpath>-->
+            </field>
+        </record>
+    </data>
+
+</odoo>

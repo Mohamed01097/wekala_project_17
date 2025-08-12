@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <template id="inherit_sale_order_report" inherit_id="account.report_invoice_document">
+            <xpath expr="//th[@name='th_priceunit']" position="after">
+                <th name="th_outgoing" class="text-left">
+                    <span>Outgoing</span>
+                </th>
+                <th name="th_commission" class="text-left">
+                    <span>Commission</span>
+                </th>
+            </xpath>
+
+
+             <xpath expr="//td[@name='td_price_unit']" position="after">
+                <td class="text-right">
+                    <span t-field="line.outgoing"/>
+                </td>
+                <td class="text-right">
+                    <span t-field="line.commission_value"/>
+                </td>
+            </xpath>
+
+
+        </template>
+
+
+    </data>
+</odoo>

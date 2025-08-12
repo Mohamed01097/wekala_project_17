@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+         <record id="action_create_purchase_today_records" model="ir.actions.server">
+            <field name="name">Create Purchase Order</field>
+            <field name="model_id" ref="model_daily_journal_agency"/>
+            <field name="binding_model_id" ref="model_daily_journal_agency"/>
+             <field name="binding_view_types">tree</field>
+
+            <field name="state">code</field>
+            <field name="code">records.action_create_purchase_orders_today()</field>
+        </record>
+
+
+
+         <record model="ir.ui.view" id="discount_purchase_order_view_form">
+            <field name="name">purchase.order.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='notes']" position="before">
+                  <group>
+<!--                    <label for="discount_type" string="Discount Type :" />-->
+                    <field name="discount_type" />
+
+<!--                    <label for="discount_rate" string="Discount Rate :" />-->
+                    <field name="discount_rate" />
+                    </group>
+
+                </xpath>
+
+<!--                <xpath expr="//field[@name='tax_totals']" position="before">-->
+<!--                    <field name="discount" />-->
+<!--                </xpath>-->
+
+            </field>
+        </record>
+
+
+
+        <!--Inherited view form of account.move-->
+        <record id="view_move_form" model="ir.ui.view">
+            <field name="name">account.move.view.form.inherit.sale.discount.total
+            </field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                
+                <xpath expr="//field[@name='narration']" position="before">
+                    <group>
+                        <field name="discount_type" width="50px"/>
+                        <field name="discount_rate" class="oe_inline"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

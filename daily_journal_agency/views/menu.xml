@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+
+    <record id="action_product_code" model="ir.actions.act_window">
+        <field name="name">Product Code</field>
+        <field name="res_model">product.code</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Create a Product Code
+
+          </p>
+        </field>
+  </record>
+
+
+  <record id="action_farmer_code" model="ir.actions.act_window">
+        <field name="name">Farmer Code</field>
+        <field name="res_model">farmer.codes</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Create a Farmer Code
+
+          </p>
+        </field>
+  </record>
+
+    <record id="action_customer_code" model="ir.actions.act_window">
+        <field name="name">Customer Code</field>
+        <field name="res_model">customer.codes</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Create a Customer Code
+
+          </p>
+        </field>
+
+
+
+
+    </record>
+
+
+         <record id="action_daily_journal_agency_line" model="ir.actions.act_window">
+        <field name="name">Custody Management Line</field>
+        <field name="res_model">daily.journal.agency</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Create a daily transaction
+
+          </p>
+        </field>
+
+
+
+
+    </record>
+
+
+
+       <menuitem
+            id="menu_custody_root"
+            name="Daily Transaction"
+            web_icon="daily_journal_agency,static/description/icon.png"
+            sequence="0"/>
+
+
+         <menuitem name="Daily Transaction"
+              id="daily_journal_agency.daily_journal_agency_line"
+              parent="daily_journal_agency.menu_custody_root"
+                action="daily_journal_agency.action_daily_journal_agency_line"
+                sequence="20"/>
+
+
+        <menuitem
+                id="menu_custody_main"
+                parent="daily_journal_agency.menu_custody_root"
+                name="Configuration"
+                sequence="50"/>
+
+
+
+     <menuitem
+                id="customer_code_menu"
+                parent="daily_journal_agency.menu_custody_main"
+                name="customer codes"
+                action="daily_journal_agency.action_customer_code"
+                sequence="0"/>
+     <menuitem
+                id="farmer_code_menu"
+                parent="daily_journal_agency.menu_custody_main"
+                name="farmer codes"
+                action="daily_journal_agency.action_farmer_code"
+                sequence="0"/>
+
+
+     <menuitem
+                id="product_code_menu"
+                parent="daily_journal_agency.menu_custody_main"
+                name="product codes"
+                action="daily_journal_agency.action_product_code"
+                sequence="0"/>
+
+
+</odoo>

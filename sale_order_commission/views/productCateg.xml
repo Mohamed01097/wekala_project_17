@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+       <record id="view_category_property_form_stock" model="ir.ui.view">
+            <field name="name">product.category.stock.property.form.inherit.stock</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="logistics" position="before">
+                    <group string="Commission">
+                        <field name="commission_value"/>
+                        <field name="is_service"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+    </data>
+</odoo>

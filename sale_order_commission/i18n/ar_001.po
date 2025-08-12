@@ -1,0 +1,61 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_commission
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-24 21:16+0000\n"
+"PO-Revision-Date: 2025-06-24 21:16+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_order_commission
+#: model:ir.model.fields,field_description:sale_order_commission.field_account_move_line__commission_value
+#: model:ir.model.fields,field_description:sale_order_commission.field_product_category__commission_value
+#: model:ir.model.fields,field_description:sale_order_commission.field_sale_order_line__commission_value
+#: model_terms:ir.ui.view,arch_db:sale_order_commission.view_category_property_form_stock
+msgid "Commission"
+msgstr "العموله"
+
+#. module: sale_order_commission
+#: model:ir.model,name:sale_order_commission.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: sale_order_commission
+#: model:ir.model,name:sale_order_commission.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: sale_order_commission
+#: model:ir.model.fields,field_description:sale_order_commission.field_account_move_line__commission_result
+#: model:ir.model.fields,field_description:sale_order_commission.field_sale_order_line__commission_result
+msgid "Result"
+msgstr "النتيجه"
+
+#. module: sale_order_commission
+#: model:ir.model,name:sale_order_commission.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: sale_order_commission
+#: model:ir.model,name:sale_order_commission.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "بند أمر المبيعات"
+
+#. module: sale_order_commission
+#: model:ir.model.fields,field_description:sale_order_commission.field_account_move_line__outgoing
+#: model:ir.model.fields,field_description:sale_order_commission.field_sale_order_line__outgoing
+msgid "outgoing"
+msgstr "الصادر"
+
+#. module: sale_order_commission
+#: model:ir.model,name:sale_order_commission.model_product_category
+msgid "product.category"
+msgstr "فئة المنتج"

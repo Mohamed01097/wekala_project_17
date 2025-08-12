@@ -1,0 +1,514 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* daily_journal_agency
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-06 17:49+0000\n"
+"PO-Revision-Date: 2025-08-06 17:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields.selection,name:daily_journal_agency.selection__account_move__discount_type__amount
+#: model:ir.model.fields.selection,name:daily_journal_agency.selection__purchase_order__discount_type__amount
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__box_type_qty
+msgid "Box Quantity"
+msgstr "العدد"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__box_type
+msgid "Box Type"
+msgstr "العلام"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_customer_codes__code
+#: model:ir.model.fields,field_description:daily_journal_agency.field_farmer_codes__code
+#: model:ir.model.fields,field_description:daily_journal_agency.field_product_code__code
+msgid "Code"
+msgstr "الكود"
+
+#. module: daily_journal_agency
+#: model:ir.model.constraint,message:daily_journal_agency.constraint_customer_codes_code_uniq
+msgid "Code already exists for another customer!"
+msgstr "الكود موجود بالفعل لعميل الاخر"
+
+#. module: daily_journal_agency
+#: model:ir.model.constraint,message:daily_journal_agency.constraint_farmer_codes_code_uniq
+msgid "Code already exists for another farmer!"
+msgstr "الكود موجود بالفعل لبائع اخر"
+
+#. module: daily_journal_agency
+#: model:ir.model.constraint,message:daily_journal_agency.constraint_product_code_code_uniq
+msgid "Code already exists for another product!"
+msgstr "الكود موجود بالفعل لصنف اخر"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__commission_value
+msgid "Commission"
+msgstr "العموله"
+
+#. module: daily_journal_agency
+#: model:ir.ui.menu,name:daily_journal_agency.menu_custody_main
+msgid "Configuration"
+msgstr "الاعدادات"
+
+#. module: daily_journal_agency
+#: model:ir.actions.server,name:daily_journal_agency.action_create_delivery_today
+msgid "Create Delivery"
+msgstr "تسليم فوارغ اليوم"
+
+#. module: daily_journal_agency
+#: model:ir.actions.server,name:daily_journal_agency.action_create_purchase_today_records
+msgid "Create Purchase Order"
+msgstr "انشاء امر شرء"
+
+#. module: daily_journal_agency
+#: model:ir.actions.server,name:daily_journal_agency.action_create_receipt_today_records
+msgid "Create Receipt"
+msgstr "استلام فوارغ"
+
+#. module: daily_journal_agency
+#: model:ir.actions.server,name:daily_journal_agency.action_create_sale_today_records
+msgid "Create Sale Order"
+msgstr "انشاء امر بيع"
+
+#. module: daily_journal_agency
+#: model_terms:ir.actions.act_window,help:daily_journal_agency.action_customer_code
+msgid "Create a Customer Code"
+msgstr "إنشاء كود عميل"
+
+#. module: daily_journal_agency
+#: model_terms:ir.actions.act_window,help:daily_journal_agency.action_farmer_code
+msgid "Create a Farmer Code"
+msgstr "إنشاء كود بائع"
+
+#. module: daily_journal_agency
+#: model_terms:ir.actions.act_window,help:daily_journal_agency.action_product_code
+msgid "Create a Product Code"
+msgstr "إنشاء كود صنف"
+
+#. module: daily_journal_agency
+#: model_terms:ir.actions.act_window,help:daily_journal_agency.action_daily_journal_agency_line
+msgid "Create a daily transaction"
+msgstr "إنشاء حركة يومية"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_customer_codes__create_uid
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__create_uid
+#: model:ir.model.fields,field_description:daily_journal_agency.field_farmer_codes__create_uid
+#: model:ir.model.fields,field_description:daily_journal_agency.field_product_code__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_customer_codes__create_date
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__create_date
+#: model:ir.model.fields,field_description:daily_journal_agency.field_farmer_codes__create_date
+#: model:ir.model.fields,field_description:daily_journal_agency.field_product_code__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.actions.act_window,name:daily_journal_agency.action_daily_journal_agency_line
+msgid "Custody Management Line"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_customer_codes__partner_id
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__customer_id
+msgid "Customer"
+msgstr "العميل"
+
+#. module: daily_journal_agency
+#: model:ir.actions.act_window,name:daily_journal_agency.action_customer_code
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__customer_code
+msgid "Customer Code"
+msgstr "كود العميل"
+
+#. module: daily_journal_agency
+#: model:res.groups,name:daily_journal_agency.group_daily_journal_agency
+msgid "Daily Journal Agency"
+msgstr " الحركات اليوميه للوكالة
+
+#. module: daily_journal_agency
+#: model:ir.ui.menu,name:daily_journal_agency.daily_journal_agency_line
+#: model:ir.ui.menu,name:daily_journal_agency.menu_custody_root
+#: model_terms:ir.ui.view,arch_db:daily_journal_agency.daily_journal_agency_form
+msgid "Daily Transaction"
+msgstr "الحركات اليوميه"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_account_bank_statement_line__discount_rate
+#: model:ir.model.fields,field_description:daily_journal_agency.field_account_move__discount_rate
+#: model:ir.model.fields,field_description:daily_journal_agency.field_account_payment__discount_rate
+#: model:ir.model.fields,field_description:daily_journal_agency.field_purchase_order__discount_rate
+msgid "Discount Rate"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_purchase_order__discount_type
+msgid "Discount Type"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_account_bank_statement_line__discount_type
+#: model:ir.model.fields,field_description:daily_journal_agency.field_account_move__discount_type
+#: model:ir.model.fields,field_description:daily_journal_agency.field_account_payment__discount_type
+msgid "Discount type"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_customer_codes__display_name
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__display_name
+#: model:ir.model.fields,field_description:daily_journal_agency.field_farmer_codes__display_name
+#: model:ir.model.fields,field_description:daily_journal_agency.field_product_code__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__farmer
+#: model:ir.model.fields,field_description:daily_journal_agency.field_farmer_codes__partner_id
+msgid "Farmer"
+msgstr "البائع"
+
+#. module: daily_journal_agency
+#: model:ir.actions.act_window,name:daily_journal_agency.action_farmer_code
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__farmer_code
+msgid "Farmer Code"
+msgstr "كود البائع"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,help:daily_journal_agency.field_daily_journal_agency__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,help:daily_journal_agency.field_account_bank_statement_line__discount_rate
+#: model:ir.model.fields,help:daily_journal_agency.field_account_move__discount_rate
+#: model:ir.model.fields,help:daily_journal_agency.field_account_payment__discount_rate
+msgid "Give the discount rate."
+msgstr ""
+
+#. module: daily_journal_agency
+#: model_terms:ir.ui.view,arch_db:daily_journal_agency.daily_journal_agency_view_search
+msgid "Group By..."
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_customer_codes__id
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__id
+#: model:ir.model.fields,field_description:daily_journal_agency.field_farmer_codes__id
+#: model:ir.model.fields,field_description:daily_journal_agency.field_product_code__id
+msgid "ID"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,help:daily_journal_agency.field_daily_journal_agency__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,help:daily_journal_agency.field_daily_journal_agency__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,help:daily_journal_agency.field_daily_journal_agency__message_has_error
+#: model:ir.model.fields,help:daily_journal_agency.field_daily_journal_agency__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__number_of_boxes
+msgid "Incoming"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__is_delivery_order
+msgid "Is Delivery Order"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__is_purchase_created
+msgid "Is Purchase Created"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__is_receipt_order
+msgid "Is Receipt Order"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__is_sale_created
+msgid "Is Sale Created"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model,name:daily_journal_agency.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_customer_codes____last_update
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency____last_update
+#: model:ir.model.fields,field_description:daily_journal_agency.field_farmer_codes____last_update
+#: model:ir.model.fields,field_description:daily_journal_agency.field_product_code____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_customer_codes__write_uid
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__write_uid
+#: model:ir.model.fields,field_description:daily_journal_agency.field_farmer_codes__write_uid
+#: model:ir.model.fields,field_description:daily_journal_agency.field_product_code__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_customer_codes__write_date
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__write_date
+#: model:ir.model.fields,field_description:daily_journal_agency.field_farmer_codes__write_date
+#: model:ir.model.fields,field_description:daily_journal_agency.field_product_code__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,help:daily_journal_agency.field_daily_journal_agency__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,help:daily_journal_agency.field_daily_journal_agency__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields.selection,name:daily_journal_agency.selection__account_move__discount_type__percent
+#: model:ir.model.fields.selection,name:daily_journal_agency.selection__purchase_order__discount_type__percent
+msgid "Percentage"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__product_id
+#: model:ir.model.fields,field_description:daily_journal_agency.field_product_code__product_id
+msgid "Product"
+msgstr "الصنف"
+
+#. module: daily_journal_agency
+#: model:ir.actions.act_window,name:daily_journal_agency.action_product_code
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__product_code
+msgid "Product Code"
+msgstr "كود الصنف"
+
+#. module: daily_journal_agency
+#: model:ir.model,name:daily_journal_agency.model_purchase_order
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__purchase_order
+msgid "Purchase Order"
+msgstr "أمر شراء"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__quantity
+msgid "Quantity"
+msgstr "الكميه"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__sale_order
+msgid "Sale Order"
+msgstr "بند البيع"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,help:daily_journal_agency.field_daily_journal_agency__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,help:daily_journal_agency.field_account_bank_statement_line__discount_type
+#: model:ir.model.fields,help:daily_journal_agency.field_account_move__discount_type
+#: model:ir.model.fields,help:daily_journal_agency.field_account_payment__discount_type
+msgid "Type of discount."
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,help:daily_journal_agency.field_daily_journal_agency__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__price_unit
+msgid "Unit Price"
+msgstr "السعر"
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,field_description:daily_journal_agency.field_daily_journal_agency__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model.fields,help:daily_journal_agency.field_daily_journal_agency__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.ui.menu,name:daily_journal_agency.customer_code_menu
+msgid "customer codes"
+msgstr "اكواد العملاء"
+
+#. module: daily_journal_agency
+#: model:ir.model,name:daily_journal_agency.model_customer_codes
+msgid "customer.codes"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.model,name:daily_journal_agency.model_daily_journal_agency
+msgid "daily.journal.agency"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.ui.menu,name:daily_journal_agency.farmer_code_menu
+msgid "farmer codes"
+msgstr "اكود الفلاحين"
+
+#. module: daily_journal_agency
+#: model:ir.model,name:daily_journal_agency.model_farmer_codes
+msgid "farmer.codes"
+msgstr ""
+
+#. module: daily_journal_agency
+#: model:ir.ui.menu,name:daily_journal_agency.product_code_menu
+msgid "product codes"
+msgstr "اكود الاصناف"
+
+#. module: daily_journal_agency
+#: model:ir.model,name:daily_journal_agency.model_product_code
+msgid "product.code"
+msgstr ""
